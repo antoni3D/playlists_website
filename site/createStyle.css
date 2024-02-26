@@ -1,0 +1,175 @@
+/*Czcionka*/
+@font-face {
+    font-family: PixelFont;
+    src: url(VT323-Regular.ttf);
+}
+
+/*Pełna strona*/
+body {
+    margin: 0;
+    background-color: #d4d0c8;
+    font-family: PixelFont;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+/*Nagłówek*/
+header{
+    display: flex;
+    margin: 10px 10px 5px 10px;
+    background-color: #8F8DD4;
+    height: 50px;
+    flex-grow: 0.4;
+}
+header img{
+    align-self: center;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/*Ustawia ikony na prawą stronę*/
+#BlockerSpotify{
+    margin-left: auto; 
+    margin-right: 10px;   
+}
+
+.RightIcons{
+    border-radius: 5px;
+    margin-left: 5px; 
+    margin-right: 10px; 
+    max-width: 60%;
+    max-height: 60%;   
+}
+
+header h2{
+    margin: 0px;
+    font-size: 35px;
+    color: white;
+    align-self: center;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 35px;
+    background-color: white;
+    border: gray solid 2px;
+    color: black;
+    align-self: center;
+    width: 50%;
+}
+
+/*Toolbar pod nagłówkiem*/
+#toolbar{
+    display: flex;
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+    background-color: #d4d0c8;
+    height: 50px;
+    flex-grow: 0.05;
+}
+
+#toolbar button{
+    border: none;
+    font-family: PixelFont;
+    align-self: center;
+    margin: 0px 30px 0px 10px;
+    background-color: #d4d0c8;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+#toolbar button:hover{
+    background-color: #9f9b94;
+}
+
+#toolbar button::first-letter{
+    text-decoration: underline;
+}
+
+/*Główna strona*/
+form{
+    margin: 5px 10px 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-content: stretch;
+    flex-grow: 10;
+    flex-direction: row;
+}
+
+#left_panel{
+    border-radius: 5px 0px 0px 5px;
+    display: flex;
+    flex-grow: 9;
+    flex-direction: column;
+    background-color: #8F8DD4;
+    overflow-x: scroll;
+}
+
+#albums{
+    border-radius: 5px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 8;
+    background-color: #8F8DD4;
+}
+
+.album{
+    border-radius: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 95%;
+    background-color: #7b79b5;
+}
+
+.songs{   
+    height: fit-content;
+}
+
+.album img{
+    height: 125px;
+    width: 125px;
+    margin: 12.5px;
+}
+
+.album p{
+    width: 125px;
+    height: 50px;
+    margin: 12.5px;
+    background-color: #8F8DD4;
+    border-radius: 5px;
+}
+
+
+#right_panel{
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #7b79b5;
+    flex-grow: 1;
+}
+
+#SaveClear{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+#SaveClear input{
+    margin: 10px;
+    border-radius: 5px;
+    font-family: PixelFont;
+}
+
+#SaveClear button{
+    margin: 10px;
+    border-radius: 5px;
+    font-family: PixelFont;
+
+}
+#BlockerStars{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto; 
+    margin-right: 5px;   
+}

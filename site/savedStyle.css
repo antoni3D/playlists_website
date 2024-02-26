@@ -1,0 +1,207 @@
+/*Czcionka*/
+@font-face {
+    font-family: PixelFont;
+    src: url(VT323-Regular.ttf);
+}
+
+/*Pełna strona*/
+body {
+    margin: 0;
+    background-color: #d4d0c8;
+    font-family: PixelFont;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+/*Nagłówek*/
+header{
+    display: flex;
+    margin: 10px 10px 5px 10px;
+    background-color: #8F8DD4;
+    height: 50px;
+    flex-grow: 0.4;
+}
+header img{
+    align-self: center;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/*Ustawia ikony na prawą stronę*/
+#BlockerSpotify{
+    margin-left: auto; 
+    margin-right: 10px;   
+}
+
+.RightIcons{
+    border-radius: 5px;
+    margin-left: 5px; 
+    margin-right: 10px; 
+    max-width: 60%;
+    max-height: 60%;   
+}
+
+header h2{
+    margin: 0px;
+    font-size: 35px;
+    color: white;
+    align-self: center;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 35px;
+    background-color: white;
+    border: gray solid 2px;
+    color: black;
+    align-self: center;
+    width: 50%;
+}
+
+/*Toolbar pod nagłówkiem*/
+#toolbar{
+    display: flex;
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+    background-color: #d4d0c8;
+    height: 50px;
+    flex-grow: 0.05;
+}
+
+#toolbar button{
+    border: none;
+    font-family: PixelFont;
+    align-self: center;
+    margin: 0px 30px 0px 10px;
+    background-color: #d4d0c8;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+#toolbar button:hover{
+    background-color: #9f9b94;
+}
+
+#toolbar button::first-letter{
+    text-decoration: underline;
+}
+#toolbar a{
+    border: none;
+    font-family: PixelFont;
+    align-self: center;
+    margin: 0px 30px 0px 10px;
+    background-color: #d4d0c8;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+#toolbar a:hover{
+    background-color: #9f9b94;
+}
+
+#toolbar a::first-letter{
+    text-decoration: underline;
+}
+
+/*Główna strona*/
+main{
+    overflow-y: auto;
+    margin: 5px 10px 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-content: stretch;
+    flex-grow: 10;
+    background: #8F8DD4;
+    scroll-behavior: auto;
+    flex-direction: column;
+}
+
+.Playlist{
+    margin: 10px auto 0px auto;
+    height: 150px;
+    width: 97%;
+    background-color: #7b79b5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cover{
+    height: 125px;
+    width: 125px;
+    border-radius: 10px;
+    margin: 12.5px;
+    background: #8F8DD4;
+    background-size: contain;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tracks{
+    height: 125px;
+    width: 80%;
+    margin: 12.5px;
+    border-radius: 10px;
+    background-color: #8F8DD4;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.track{
+    height: 112.5px;
+    width: 300px;
+    margin: 6.5px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.track img{
+    height: 100px;
+    width: 100px;
+    margin: 6.25px;
+    margin-right:0px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.track p{
+    border-radius: 0px 5px 5px 0px;
+    background-color: #7b79b5;
+    height: 100px;
+    width: 100%;
+    margin: 6.25px;
+    margin-left: 0px;
+    align-content: center;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    margin: 12.5px;
+    background-color: #7b79b5;
+    height: 125px;
+    width: 10%;
+}
+
+.controls button{
+    font-family: PixelFont;
+    height: 50px;
+    width: 100%;
+    margin: auto 0px auto 0px;
+}
+
+.controls input{
+    font-family: PixelFont;
+    height: 50px;
+    width: 100%;
+    margin: auto 0px auto 0px;
+}
+
+#BlockerStars{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto; 
+    margin-right: 5px;   
+}
